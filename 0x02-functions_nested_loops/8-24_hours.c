@@ -16,9 +16,9 @@ void jack_bauer(void)
 		{
 			int min = num1 + minutes;
 
-			_putchar(h);
+			_putchar(h + '0');
 			_putchar(':');
-			_putchar(min);
+			_putchar(min + '0');
 			_putchar('\n');
 		}
 	}
