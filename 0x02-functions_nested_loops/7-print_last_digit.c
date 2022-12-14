@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <limits.h>
 /**
  * print_last_digit - Prints the digit of a number
  * @d: Parameter
