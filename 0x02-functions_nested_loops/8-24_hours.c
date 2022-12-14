@@ -5,14 +5,14 @@
  */
 void jack_bauer(void)
 {
-	int num1 = 00;
-	int minutes, hour = 0;
+	int num1 = 0;
+	int minutes, hour;
 
-	for (; hour <= 23; hour++)
+	for (hour = 0; hour <= 23; hour++)
 	{
-		int h = num1 + h;
+		int h = num1 + hour;
 
-		for (; minutes <= 59; minutes++)
+		for (minutes = 0; minutes <= 59; minutes++)
 		{
 			int min = num1 + minutes;
 
