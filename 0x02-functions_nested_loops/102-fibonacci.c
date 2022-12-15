@@ -16,7 +16,6 @@ int main(void)
 		sum = j + i;
 		i = j;
 		j = sum;
-		num++;
 		printf("%d, ", sum);
 	}
 	sum = j + i;
