@@ -17,13 +17,13 @@ void print_to_98(int n)
 				n = abs(n);
 				_putchar('-');
 			}
-			if ((n / 10) > 0)
+			if ((n / 10) > 9)
 			{
-				if (n > 99)
-				{
-					_putchar((n / 10) + '0');
-				}
-				_putchar((n / 10) + '0');
+				int numerator = n / 10;
+
+				_putchar((numerator / 10) + '0');
+				_putchar((numerator % 10) + '0');
+
 			}
 			_putchar((n % 10) + '0');
 			_putchar(',');
