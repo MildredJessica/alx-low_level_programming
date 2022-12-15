@@ -7,23 +7,23 @@
  */
 void print_98_fibonacci(void)
 {
-        long int i = 1;
-        long int j = 2;
-        long int sum = 0;
-        int num = 0;
+	long int i = 1;
+	long int j = 2;
+	long int sum = 0;
+	int num = 0;
 
-        printf("%ld, %ld, ", i, j);
-        while (num < 95)
-        {
-                sum = i + j;
-                i = j;
-                j = sum;
-                printf("%ld, ", sum);
-                num++;
-        }
-        sum = j + i;
-        printf("%ld", sum);
-        printf("\n");
+	printf("%ld, %ld, ", i, j);
+	while (num < 95)
+	{
+		sum = i + j;
+		i = j;
+		j = sum;
+		printf("%ld, ", (unsigned int) sum);
+		num++;
+	}
+	sum = j + i;
+	printf("%ld", (unsigned int) sum);
+	printf("\n");
 }
 
 /**
