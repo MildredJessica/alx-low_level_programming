@@ -10,11 +10,11 @@ void print_times_table(int n)
 {
 	if (n >= 0 || n < 15)
 	{
-		int row, column = 0;
+		int row, column;
 
-		for (; row <= n; row++)
+		for (row = 0; row <= n; row++)
 		{
-			for (; column <= n; column++)
+			for (column = 0; column <= n; column++)
 			{
 				int d = row * column;
 
@@ -32,6 +32,7 @@ void print_times_table(int n)
 					_putchar(' ');
 				}
 			}
+			_putchar('\n');
 		}
 	}
 }
