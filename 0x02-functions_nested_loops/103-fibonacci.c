@@ -11,20 +11,17 @@ int main(void)
 	long i = 1;
 	long j = 2;
 
-	printf("%ld", sum);
 	while (num < 4000000)
 	{
 		num = j + i;
 		if ((num % 2) == 0)
 		{
-			printf(", ");
 			sum += num;
-			printf("%ld", sum);
 		}
 		i = j;
 		j = num;
 	}
-	printf("\n");
+	printf("%ld\n", sum);
 	return (0);
 }
 
