@@ -1,38 +1,38 @@
 #include <stdio.h>
-
-/**
- * print_98_fibonacci - Prints the 98 fibonacci numbers
- * Prints the first 98 fibonacci numbers
- * Return: Nothing
- */
-void print_98_fibonacci(void)
-{
-	unsigned long int i = 1;
-	unsigned long int j = 2;
-	unsigned long int sum = 0;
-	int num = 0;
-
-	printf("%lu, %lu, ", i, j);
-	while (num < 95)
-	{
-		sum = i + j;
-		i = j;
-		j = sum;
-		printf("%lu, ", sum);
-		num++;
-	}
-	sum = j + i;
-	printf("%lu", sum);
-	printf("\n");
-}
-
+#define LARGEST 10000000000
 /**
  * main - Entry point
- * Prints the first 98 fibonacci numbers
+ * Description: Find and print the first 98 fib numbers starting with 1 and 2.
+ * Numbers should be coma and space separated.
  * Return: Always 0
  */
 int main(void)
 {
-	print_98_fibonacci();
+	unsigned long int k = 0, i = 1, u = 0, j = 2;
+	unsigned long int num1, num2, num3;
+	int num;
+
+	printf("%lu, %lu, ", i, j);
+	for (num = 2; num < 98; num++)
+	{
+		if (i + j > LARGEST || u > 0 || k > 0)
+		{
+			num1 = (i + j) / LARGEST;
+			num2 = (i + j) % LARGEST;
+			num3 = k + u + num1;
+			k = u, u = num3;
+			i = j, j = num2;
+			printf("%lu%010lu", u, j);
+		}
+		else
+		{
+			num2 = i + j;
+			i = j, j = num2;
+			printf("%lu", j);
+		}
+		if (num != 97)
+			printf(", ");
+	}
+	printf("\n");
 	return (0);
 }
