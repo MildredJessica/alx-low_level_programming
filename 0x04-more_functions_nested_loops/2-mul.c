@@ -11,15 +11,7 @@ int mul(int a, int b)
 {
 	int result;
 
-	if (a < 0)
-	{
-		if (b < 0)
-			result = a * b;
-		else
-			result = -1 * (a * b);
-	}
-	else
-		result = a * b;
+	result = a * b;
 
 	return (result);
 }
