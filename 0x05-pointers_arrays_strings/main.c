@@ -19,9 +19,10 @@ int main(void)
 
 	/**
 	 * reset_to_98(p);
-	swap_int(y, p);
-	*/
+	swap_int(y, p);:
 	printf("String length is %d\n", _strlen(s));
+	*/
+	_puts(s);
 
 	return (0);
 }
