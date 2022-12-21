@@ -8,10 +8,12 @@
  */
 int main(void)
 {
-	int n = 40;
+	/**
+	 * int n = 40;
 	int k  = 49;
 	int *p = &n;
 	int *y = &k;
+	*/
 	char *s;
 	
 	s = "Hello World";
@@ -20,9 +22,10 @@ int main(void)
 	/**
 	 * reset_to_98(p);
 	swap_int(y, p);:
-	printf("String length is %d\n", _strlen(s));
-	*/
+	printf("String length is %d\n", _strlen(s))
 	_puts(s);
+	*/
+	print_rev(s);
 
 	return (0);
 }
