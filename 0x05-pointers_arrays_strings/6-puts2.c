@@ -2,11 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * put2 - Prints everyother character starting with the first character
+ * puts2 - Prints everyother character starting with the first character
  * @str: Parameter
  * Return: Nothing
  */
-void put2(char *str)
+void puts2(char *str)
 {
 	int i = 0;
 
