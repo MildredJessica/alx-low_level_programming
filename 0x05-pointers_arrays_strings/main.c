@@ -15,7 +15,7 @@ int main(void)
 	int *y = &k;
 	*/
 	char *s;
-	
+
 	s = "Hello World";
 
 
@@ -24,8 +24,10 @@ int main(void)
 	swap_int(y, p);:
 	printf("String length is %d\n", _strlen(s))
 	_puts(s);
-	*/
 	print_rev(s);
+	*/
+	rev_string(s);
+	printf("New String is %s", s);
 
 	return (0);
 }
