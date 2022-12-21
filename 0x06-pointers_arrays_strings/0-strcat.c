@@ -14,7 +14,6 @@ char *_strcat(char *dest, char *src)
 
 	for (j = 0; dest[j] != '\0'; j++)
 		continue;
-	printf("J is %d\n", j);
 	i = 0;
 	for (; src[i] != '\0'; i++)
 	{
