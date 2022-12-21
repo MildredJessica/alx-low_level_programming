@@ -15,12 +15,9 @@ char *_strcat(char *dest, char *src)
 	for (j = 0; dest[j] != '\0'; j++)
 		continue;
 	printf("J is %d\n", j);
-	i = -1;
-	printf("SRC is %c\n", src[i]);
-	while (src[i] != '\0')
+	i = 0;
+	for (; src[i] != '\0'; i++)
 	{
-		printf("I'm inside the while loop");
-		i++;
 		dest[j] = src[i];
 		j++;
 	}

@@ -15,7 +15,7 @@ int main(void)
 	 * s = _strcat(s, y);
 	 * ptr = _strcat(s, y)
 	 */;
-	ptr = _strncat(s1, s2, 3);
+	ptr = _strcat(s1, s2);
 	
 	printf("Conca %s\n", ptr);
 	return (0);
