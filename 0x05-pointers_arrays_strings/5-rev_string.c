@@ -13,7 +13,6 @@ void rev_string(char *s)
 	char temp;
 	
 	d = strlen(s);
-	printf("Prinst here %d\n", d);
 	for (i = 0; i < d/2; i++)
 	{
 		temp = s[i];
