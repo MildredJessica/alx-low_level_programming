@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * rev_array - Reverse an array of integers
+ * reverse_array - Reverse an array of integers
  * @a: Array
  * @n: length of the array
  * Return:Nothing
