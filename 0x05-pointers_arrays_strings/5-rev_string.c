@@ -18,10 +18,7 @@ void rev_string(char *s)
 	{
 		temp = s[i];
 		k = d - i - 1;
-		printf("Prinst temp %c\n", temp);
-		printf("Prints here %d, %s", s[k], s);
 		s[i] = s[k];
-		printf("Prinst here %c\n ('%s')", s[i], s);
 		s[k] = temp;
 	}
 	printf("\n");
