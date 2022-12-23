@@ -55,4 +55,5 @@ void insert_num(int n)
 		_putchar((n / 10) + '0');
 	_putchar((n % 10) + '0');
 	_putchar(',');
+	_putchar(' ');
 }
