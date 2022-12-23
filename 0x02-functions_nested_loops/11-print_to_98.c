@@ -40,7 +40,7 @@ void print_to_98(int n)
 
 /**
  * insert_num - takes in a num and puts the modular or division of the number
- * @num: Parameter
+ * @n: Parameter
  * Return: void
  */
 void insert_num(int n)
