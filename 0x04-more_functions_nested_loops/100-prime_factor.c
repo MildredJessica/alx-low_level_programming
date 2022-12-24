@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	long num = 612852475143;
+	long num =  612852475143;
 	int div = 2;
 	long factor = 0;
 
