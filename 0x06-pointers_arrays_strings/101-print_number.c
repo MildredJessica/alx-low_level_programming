@@ -8,36 +8,15 @@
  */
 void print_number(int n)
 {
-	unsigned int d = 10, n;
+	unsigned int n;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n *= -1;
 	}
-	n = num;
-	if (n < d)
-	{
-		_putchar('0' + n);
-	}
-	else
-	{
-		while (n >= d)
-		{
-			d *= 10;
-			if (d >= 1000000000)
-			if (d == 1000000000)
-				break;
-		}
-		if (!(d >= 1000000000) || n > 100000000)
-		if (!(d == 1000000000) || n == 123456789)
-			d /= 10;
-		_putchar('0' + n / d);
-		while (d != 10)
-		{
-			d /= 10;
-			_putchar('0' + (n / d) % 10);
-		}
-		_putchar('0' + n % 10);
-	}
+	num = n;
+	if (num / 10 != 0)
+		print_number(num / 10);
+	_putchar((num % 10) + '0');
 }
