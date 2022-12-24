@@ -15,10 +15,10 @@ int main(void)
 	{
 		if (num % div == 0)
 		{
-			num = num / divide;
-			factor = divide;
+			num = num / div;
+			factor = div;
 		}
-		divide++;
+		div++;
 	}
 	printf("%ld\n", factor);
 	return (0);
