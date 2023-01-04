@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-    _puts_recursion("Puts with recursion");
-    return (0);
+	_print_rev_recursion("\nPuts with recursion");
+	return (0);
 }
