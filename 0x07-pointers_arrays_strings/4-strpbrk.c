@@ -9,12 +9,11 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int j = 0;
-	
-	printf("Okay");
+	int j;
+
 	while (*s)
 	{
-		for (; accept[j] != '\0'; j++)
+		for (j = 0; accept[j]; j++)
 		{
 			if (*s == accept[j])
 				return (s);
