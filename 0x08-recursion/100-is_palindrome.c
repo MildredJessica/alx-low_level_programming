@@ -13,7 +13,7 @@ int _palindrome_Finder(char *s, int length, int i)
 	if (s[i] != s[length])
 		return (0);
 	if ((i < length) && (s[i] == s[length]))
-		return _palindrome_Finder(s, length - 1, i + 1);
+		return (_palindrome_Finder(s, length - 1, i + 1));
 	return (1);
 }
 /**
