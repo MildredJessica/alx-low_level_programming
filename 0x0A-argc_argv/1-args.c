@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 /**
- * main - Prints the number of arguments passed 
+ * main - Prints the number of arguments passed
  * @argc: Argument count
  * @argv: One dimensional array
  * Return: The number of arguments passed
@@ -18,6 +18,6 @@ int main(int argc, char *argv[])
 		sum += atoi(argv[i]);
 		count++;
 	}
-	printf ("%d\n", count);
+	printf("%d\n", count);
 	return (0);
 }
