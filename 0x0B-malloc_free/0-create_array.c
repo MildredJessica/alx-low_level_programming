@@ -18,12 +18,10 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 		return (NULL);
-	else
+	for (i = 0; i < size; i++)
 	{
-		for (i = 0; i < size; i++)
-		{
-			arrChar[i] = c;
-		}
+		arrChar[i] = c;
 	}
+	free(arrChar);
 	return (arrChar);
 }
