@@ -11,6 +11,8 @@
 
 char *_strdup(char *str)
 {
+	if (str == NULL)
+		printf("Failed to allocate memory\n");
 	char *dest = strdup(str);
 
 	return (dest);
