@@ -12,9 +12,9 @@
 char *_strdup(char *str)
 {
 	char *dest;
-	unsigned int i ;
+	unsigned int i, len;
 
-	unsigned int len = strlen(str) + 1;
+	len = strlen(str) + 1;
 	dest = malloc(len * sizeof(char));
 	if (str == NULL)
 		return (NULL);
