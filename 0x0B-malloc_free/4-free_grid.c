@@ -3,12 +3,11 @@
 #include <stdlib.h>
 
 /**
- * frree_grid - Frees a 2 dimensional array
+ * free_grid - Frees a 2 dimensional array
  * @grid: Two dimensional arrays
  * @height: height
  * Return: Nothing
  */
-
 void free_grid(int **grid, int height)
 {
 	int y;
