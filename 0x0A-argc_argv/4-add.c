@@ -11,25 +11,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, j;
 	int add = 0;
 
 	if (argc > 2)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			printf("Ehere%d\n", isalpha('j'));
-			if ((argv[i] >= 'A') && (argv[i] <= 'Z'))
+			for (j = 0; argv[i][j] != '\0'; j++)
 			{
-				printf("Error\n");
-				break;
-			}
-			else
-				add += atoi(argv[i]);
+				if (!isdigit(argv[i][j]))
+				{
+					printf("Error\n");
+					return (1);
+				}
 
-			printf("%d\n", add);
+			}
+			add += atoi(argv[i]);
 		}
-	}else 
-		printf("%d\n", add);
-	return (1);
+	}
+	printf("%d\n", add);
+	return (0);
 }
