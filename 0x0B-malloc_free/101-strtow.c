@@ -47,20 +47,16 @@ void free_them(char **str, int i)
 char **strtow(char *str)
 {
 	char **arr, *wordsfound;
-	int count_words = 0;
-	int i, j, k = 0;
+	int count_words = 0, i, j, k = 0;
 
 	if (str == 0 || *str == 0)
 		return (NULL);
 	count_words = countWords(str);
 	if (count_words == 0)
 		return (NULL);
-
 	arr = malloc(sizeof(char) * (count_words + 1));
-
-	if (arr == NULL)
+	if (arr == 0)
 		return (NULL);
-
 	for (i = 0; *str != '\0' && i < count_words;)
 	{
 		if (*str == ' ')
@@ -73,7 +69,7 @@ char **strtow(char *str)
 				j++;
 				str++;
 			}
-			arr[i] = malloc((j+1) * sizeof(char));
+			arr[i] = malloc((j + 1) * sizeof(char));
 			if (arr[i] == 0)
 			{
 				free_them(arr, i);
@@ -86,12 +82,8 @@ char **strtow(char *str)
 				k++;
 			}
 			arr[i][k] = '\0';
-			i++;
-			k = 0;
-			j = 0;
-			str++;
+			i++; k = 0; j = 0; str++;
 		}
 	}
 	return (arr);
-
 }
