@@ -57,24 +57,29 @@ void print_all(const char * const format, ...)
 {
 	va_list list;
 	char *str = "";
-	int i = 0, j = 0;
+	int i = 0, j;
 
 	check_format check[] = {
 		{"c", check_char},
 		{"i", check_int},
 		{"f", check_float},
 		{"s", check_string},
+		{NULL, NULL}
 	};
 	va_start(list, format);
 
-	while (format != 0 && format[i / 4] != 0)
+	while (format && format[i])
 	{
-		j = i % 4;
-		if (format[i / 4] == check[j].type[0])
+		j = 0;
+		while (check[j].type != NULL)
 		{
-			printf("%s", str);
-			check[j].f(list);
-			str = ",";
+			if (format[i] == check[j].type[0])
+			{
+				printf("%s", str);
+				check[j].f(list);
+				str = ",";
+			}
+			j++;
 		}
 		i++;
 	}
