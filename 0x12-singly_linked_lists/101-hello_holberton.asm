@@ -1,15 +1,18 @@
 section .data
-    msg db "Hello Holberton",10      ; 10 is the ASCII code for a new line (LF)
+	fmt db	"%s", 10, 0
+	msg db	"Hello, Holberton", 0
 
-section .text
-    global _start
+	section .text
+	extern printf
+	global main
 
-_start:
-    mov rax, 1
-    mov rdi, 1
-    mov rsi, msg
-    mov rdx, 13
-    syscall
-    mov rax, 60
-    mov rdi, 0
-    syscall
+main:
+	push	rbp
+	mov	rsi, msg
+	mov	rdi, fmt
+	mov	rax, 0
+	call 	printf
+	pop	rbp
+	mov	rax, 0
+	ret
+
