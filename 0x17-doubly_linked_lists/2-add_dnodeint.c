@@ -18,6 +18,8 @@ return (NULL);
 new->n = n;
 new->prev = NULL;
 new->next = *head;
+if (*head != NULL)
+(*head)->prev = new;
 *head = new;
 
 return (new);
