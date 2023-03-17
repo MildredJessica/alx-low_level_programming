@@ -13,8 +13,8 @@ dlistint_t *tmp = *h;
 dlistint_t *new = malloc(sizeof(dlistint_t));
 unsigned int pos = 0;
 
-if (*h == NULL || new == NULL) 
-return(NULL);
+if (*h == NULL || new == NULL)
+return (NULL);
 new->n = n;
 if (idx == 0)
 {
@@ -22,7 +22,7 @@ new->next = *h;
 *h = new;
 return (new);
 }
-while(tmp->next && pos != idx - 1)
+while (tmp->next && pos != idx - 1)
 {
 pos++;
 tmp = tmp->next;
