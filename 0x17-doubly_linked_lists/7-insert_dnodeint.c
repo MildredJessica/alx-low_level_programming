@@ -15,20 +15,23 @@ unsigned int pos = 0;
 
 if (*h == NULL || new == NULL)
 return (NULL);
-new->n = n;
 if (idx == 0)
 {
-new->next = *h;
-*h = new;
-return (new);
+return (add_dnodeint(h, n));
 }
 while (tmp->next && pos != idx - 1)
 {
 pos++;
 tmp = tmp->next;
 }
-new->next = tmp->next;
+if (tmp->next == NULL)
+{
+return (add_dnodeint_end(h, n));
+}
+new->n = n;
 new->prev = tmp;
+new->next = tmp->next;
+tmp->next->prev = new;
 tmp->next = new;
 return (new);
 }
