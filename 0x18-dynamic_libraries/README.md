@@ -34,6 +34,6 @@ Create a dynamic library that contains C functions that can be called from Pytho
 - python3 100-tests.py
 
 # Links that helped 
-<https://medium.com/@julianfrancor9/creating-a-dynamic-library-in-c-b2cb01d45876>  
-<https://cylab.be/blog/234/creating-a-dynamic-library-in-c>
-<https://medium.com/@kenneth.ca95/how-to-create-a-dynamic-library-in-c-baa473148d00#:~:text=The%20way%20to%20create%20a,make%20the%20code%20position%20independent>
+[Link1](https://medium.com/@julianfrancor9/creating-a-dynamic-library-in-c-b2cb01d45876)
+[Link2](https://cylab.be/blog/234/creating-a-dynamic-library-in-c)
+[Link2](https://medium.com/@kenneth.ca95/how-to-create-a-dynamic-library-in-c-baa473148d00#:~:text=The%20way%20to%20create%20a,make%20the%20code%20position%20independent)
