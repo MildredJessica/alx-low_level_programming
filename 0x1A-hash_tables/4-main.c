@@ -24,6 +24,7 @@ int main(void)
     hash_table_set(ht, "c", "isfun");
 
     value = hash_table_get(ht, "python");
+    printf("My value is %s", value);
     printf("%s:%s\n", "python", value);
     value = hash_table_get(ht, "Bob");
     printf("%s:%s\n", "Bob", value);
