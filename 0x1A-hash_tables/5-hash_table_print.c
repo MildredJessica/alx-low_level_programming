@@ -13,7 +13,6 @@ char flag = 0;
 
 if (ht == NULL || ht->array == NULL)
 {
-printf("{}");
 return;
 }
 printf("{");
@@ -23,8 +22,10 @@ tmp = ht->array[i];
 while (tmp != NULL)
 {
 if (flag == 1)
+{
 printf(", ");
-printf("'%s' : '%s'", tmp->key, tmp->value);
+}
+printf("\'%s\' : \'%s\'", tmp->key, tmp->value);
 flag = 1;
 tmp = tmp->next;
 }
