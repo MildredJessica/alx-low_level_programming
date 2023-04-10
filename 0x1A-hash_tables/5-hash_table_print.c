@@ -24,7 +24,6 @@ while (tmp != NULL)
 {
 if (flag == 1)
 printf(", ");
-printf("My key is %s:\n", tmp->key);
 printf("'%s' : '%s'", tmp->key, tmp->value);
 flag = 1;
 tmp = tmp->next;
