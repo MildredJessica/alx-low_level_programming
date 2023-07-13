@@ -12,6 +12,8 @@ int binary_search(int *array, size_t size, int value)
 int h, l = 0;
 int r = size - 1;
 
+if (array == NULL)
+return (-1);
 while (l <= r)
 {
 print_array(array, l, r);
