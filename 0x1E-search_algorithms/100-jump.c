@@ -17,20 +17,19 @@ size_t i;
 if (array == NULL)
 return (-1);
 printf("Value checked array[%lu] = [%d]\n", start, array[start]);
-while (array[end] < value && start < size)
+while (array[end] < value && end < size)
 {
 printf("Value checked array[%lu] = [%d]\n", end, array[end]);
 start = end;
 end += sqrt(size);
-if (end > size - 1)
+if (end >= size)
 end = size;
 }
 printf("Value found between indexes [%lu] and [%lu]\n", start, end);
-for (i = start; i <= end; i++)
+for (i = start; i < end; i++)
 {
 printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-if (end == size)
-break;
+
 if (array[i] == value)
 return (i);
 }

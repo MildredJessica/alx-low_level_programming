@@ -32,8 +32,5 @@ high = pos - 1;
 else
 return pos;
 }
-//if (value == array[low])
-//return low;
-//else
 return (-1);
 }
